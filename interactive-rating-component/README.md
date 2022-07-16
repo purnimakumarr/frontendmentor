@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/purnimakumarr/frontendmentor/tree/main/interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://purnimakumarr.github.io/frontendmentor/interactive-rating-component/)
+- Solution URL: [View code](https://github.com/purnimakumarr/frontendmentor/tree/main/interactive-rating-component)
+- Live Site URL: [View site](https://purnimakumarr.github.io/frontendmentor/interactive-rating-component/)
 
 ## My process
 
