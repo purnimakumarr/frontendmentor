@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: rgb(0, 255, 247);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Outfit", sans-serif;
+
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--main-bg);
+}
+
+/* Main Section */
+
+main {
+  padding: 2.4rem;
+  margin: 0 auto;
+  /* width: 100%; */
+}
+
+.nft-card {
+  padding: 1.8rem 2.4rem;
+  background-color: var(--card-bg);
+  max-width: 38rem;
+  min-width: 28rem;
+  border-radius: 13px;
+  margin-bottom: 1.2rem;
+}
+
+.img-wrapper {
+  position: relative;
+  margin-bottom: 1.2rem;
+  border-radius: 13px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 13px;
+  transition: all 0.3s;
+
+  display: block;
+}
+
+.icon-view {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.img-wrapper:hover {
+  background: rgb(0, 255, 247, 50%);
+}
+
+.img-wrapper:hover .img {
+  opacity: 0.3;
+}
+
+.img-wrapper:hover .icon-view {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.title {
+  margin-bottom: 1.4rem;
+}
+
+.title a:link,
+.title a:visited {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 2.8rem;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.title a:hover,
+.title a:active {
+  color: var(--cyan);
+}
+
+.card-text {
+  color: var(--soft-blue);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.nft-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.8rem;
+  margin-bottom: 1.8rem;
+  border-bottom: 2px solid var(--line);
+}
+
+.wrapper {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.rate {
+  color: var(--cyan);
+}
+
+.time-left {
+  color: var(--soft-blue);
+}
+
+.creater {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.creater img {
+  width: 10%;
+  border-radius: 50%;
+  border: 1.5px solid var(--white);
+}
+
+.creater p {
+  color: var(--soft-blue);
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.creater-link:link,
+.creater-link:visited {
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.creater-link:hover,
+.creater-link:active {
+  color: var(--cyan);
+}
+
+/* Footer */
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 24em) {
+  html {
+    font-size: 50%;
+  }
+}
