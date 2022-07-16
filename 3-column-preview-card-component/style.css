@@ -1,0 +1,120 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --very-light-gray: hsl(0, 0%, 95%); /* (background, heading, button) */
+}
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/* Main Section */
+
+.card-container {
+  max-width: 58rem;
+  padding: 1.2rem;
+}
+
+.row {
+  margin: 0;
+}
+
+.sedan {
+  border-radius: 6px 0 0 6px;
+  background-color: var(--bright-orange);
+}
+
+.suv {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  border-radius: 0 6px 6px 0;
+  background-color: var(--very-dark-cyan);
+}
+
+.col-md-4 h1,
+.col-md-4 h2 {
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+}
+
+.col-md-4 p {
+  color: var(--white);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 4rem;
+}
+
+.col-md-4 a:link,
+.col-md-4 a:visited {
+  background-color: var(--very-light-gray);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 1rem;
+  border: 2px solid var(--white);
+  transition: all 0.3s;
+}
+
+.sedan a:link,
+.sedan a:visited {
+  color: var(--bright-orange);
+}
+
+.suv a:link,
+.suv a:visited {
+  color: var(--dark-cyan);
+}
+
+.luxury a:link,
+.luxury a:visited {
+  color: var(--very-dark-cyan);
+}
+
+.col-md-4 a:hover,
+.col-md-4 a:active {
+  background-color: transparent;
+  color: var(--white);
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 50em) {
+  .sedan {
+    border-radius: 6px 6px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 6px 6px;
+  }
+
+  .col-md-4 a:link,
+  .col-md-4 a:visited {
+    font-size: 0.9rem;
+  }
+
+  .attribution {
+    font-size: 0.9rem;
+  }
+}
