@@ -50,5 +50,5 @@ Grid System provided by Bootstrap
 
 - Website - [Purnima Kumar](https://purnimakumarr.github.io/)
 - Frontend Mentor - [@purnimakumarr](https://www.frontendmentor.io/profile/purnimakumarr)
-- Twitter - [@yourusername](https://www.twitter.com/purnimakumarr)
+- Twitter - [@purnimakumarr](https://www.twitter.com/purnimakumarr)
  
