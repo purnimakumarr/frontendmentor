@@ -33,8 +33,8 @@ Users should be able to:
 
 #### Mobile
 
-![](./images/screenshot-rating-component-mobile.png)
-![](./images/screenshot-rating-component-mobile-2.png)
+![](./images/screenshot-rating-component-mobile.jpg)
+![](./images/screenshot-rating-component-mobile-2.jpg)
 
 ### Links
 
