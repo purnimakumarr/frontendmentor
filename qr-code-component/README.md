@@ -9,19 +9,24 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Desktop
+
+![](./images/screenshot-qr-code-desktop.png)
+
+#### Mobile
+
+![](./images/screenshot-qr-code-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/purnimakumarr/frontendmentor/tree/main/qr-code-component)
+- Live Site URL: [Add live site URL here](https://purnimakumarr.github.io/frontendmentor/qr-code-component/)
 
 ## My process
 
@@ -30,8 +35,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - Web-first flow
-
-### What I learned
 
 ## Author
 
