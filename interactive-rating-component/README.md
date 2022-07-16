@@ -26,7 +26,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot-desktop-view.png)
+#### Desktop
+
+![](./images/screenshot-rating-component-desktop.png)
+![](./images/screenshot-rating-component-desktop-2.png)
+
+#### Mobile
+
+![](./images/screenshot-rating-component-mobile.png)
+![](./images/screenshot-rating-component-mobile-2.png)
 
 ### Links
 
@@ -51,4 +59,3 @@ Grid System provided by Bootstrap
 - Website - [Purnima Kumar](https://purnimakumarr.github.io/)
 - Frontend Mentor - [@purnimakumarr](https://www.frontendmentor.io/profile/purnimakumarr)
 - Twitter - [@purnimakumarr](https://www.twitter.com/purnimakumarr)
- 
