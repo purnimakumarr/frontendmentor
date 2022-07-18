@@ -27,10 +27,12 @@ Users should be able to:
 
 #### Desktop
 
-![](./images/screenshot-desktop.png)
-![](./images/screenshot-active-states.png)
+![Desktop view of the site](./images/screenshot-desktop.png)
+![Desktop of the site with active states](./images/screenshot-active-states.png)
 
 #### Mobile
+
+![Mobile view of the site](./images/screenshot-mobile.jpg)
 
 ### Links
 
