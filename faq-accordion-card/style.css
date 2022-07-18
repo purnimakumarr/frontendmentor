@@ -70,7 +70,7 @@ body {
 /***********************/
 
 main {
-  padding: 1.2rem 2.4rem;
+  padding: 2.4rem 6rem;
 }
 
 .container {
@@ -210,4 +210,78 @@ main {
   margin-bottom: 0.8rem;
 
   transform: translateY(0);
+}
+
+/***********************/
+/* Media Queries */
+/***********************/
+
+@media (max-width: 62em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  main {
+    padding: 20rem 2.4rem 4.8rem 2.4rem;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    row-gap: 2.4rem;
+  }
+
+  .illustration-box {
+    display: none;
+  }
+
+  .img-box {
+    overflow: visible;
+  }
+
+  .bg-pattern {
+    background-image: url(images/bg-pattern-mobile.svg);
+    width: 26.6rem;
+    height: 11.5rem;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .illustration-woman {
+    background-image: url(images/illustration-woman-online-mobile.svg);
+    width: 29rem;
+    height: 22rem;
+    top: -14rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .faq-text-box {
+    padding: 0 2.4rem 4.8rem 2.4rem;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
+
+/* 480px or below */
+
+@media (max-width: 30em) {
+  html {
+    font-size: 50%;
+  }
+
+  .question-btn {
+    gap: 1.2rem;
+  }
+
+  .question {
+    font-size: 1.4rem;
+  }
+
+  .icon-arrow-down {
+    width: 1.2rem;
+  }
 }
