@@ -33,6 +33,8 @@ Users should be able to:
 
 #### Mobile
 
+![Mobile view of the site](./images/screenshot-mobile.jpg)
+
 ### Links
 
 - Solution URL: [View code](https://github.com/purnimakumarr/frontendmentor/tree/main/base-apparel-coming-soon-page)
