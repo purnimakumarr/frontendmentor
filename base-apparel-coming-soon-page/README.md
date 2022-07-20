@@ -56,6 +56,6 @@ I learnt about email validation using JavaScript.
 
 ## Author
 
-- Website - [Purnima Kumar](https://www.your-site.com)
+- Website - [Purnima Kumar](https://purnimakumarr.github.io/)
 - Frontend Mentor - [@purnimakumarr](https://www.frontendmentor.io/profile/purnimakumarr)
 - Twitter - [@purnimakumarr](https://www.twitter.com/purnimakumarr)
