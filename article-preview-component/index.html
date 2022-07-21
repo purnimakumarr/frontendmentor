@@ -1,36 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <title>Frontend Mentor | Article preview component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <!-- JS -->
+    <script defer src="script.js"></script>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Michelle Appleton
-  28 Jun 2020
+    <!--  ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="preview-card">
+        <img
+          class="card-img"
+          src="images/drawers.jpg"
+          alt="An emerald colored bed side drawer set. On top of the drawer set, lays a painting, a beige colored flower vase, and a frame that says 'Love will keep us alive'"
+        />
+        <div class="card-text">
+          <h1 class="heading">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="text">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <div class="author-wrapper">
+            <img
+              class="author-img"
+              src="images/avatar-michelle.jpg"
+              alt="Michelle Appleton wearing a white high neck sweater and a musty green jacket."
+            />
+            <div class="author-text">
+              <p class="author-name">Michelle Appleton</p>
+              <p class="article-date">28 Jun 2020</p>
+            </div>
+            <button class="share-btn-wrapper" aria-label="Share">
+              <ion-icon class="icon icon--share" name="share-social"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/purnimakumarr">Purnima Kumar</a>.
+      </div>
+    </footer>
+  </body>
 </html>

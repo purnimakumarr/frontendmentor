@@ -16,6 +16,10 @@ The designs were created to the following widths:
 
 ## Typography
 
+### Font sizes (px)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
 ### Body Copy
 
 - Font size: 13px
@@ -32,3 +36,8 @@ We provide SVGs for the social icons. But please feel free to use a font icon li
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+
+### WHITESPACE
+
+- Spacing sizes (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
