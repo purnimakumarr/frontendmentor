@@ -96,8 +96,12 @@ main {
   color: var(--desaturated-dark-blue);
 }
 
-.share-btn-wrapper {
+.share-tooltip {
+  position: relative;
   margin-left: auto;
+}
+
+.share-btn {
   border: none;
   background-color: var(--light-grayish-blue);
   padding: 1.2em;
@@ -111,17 +115,76 @@ main {
   transition: all 0.3s;
 }
 
-.share-btn-wrapper:hover {
+.share-btn:hover,
+.share-tooltip.active .share-btn {
   background-color: var(--very-dark-grayish-blue);
 }
 
-.icon--share {
+.icon-share {
   font-size: 1.8rem;
   transition: all 0.3s;
 }
 
-.share-btn-wrapper:hover .icon--share {
+.share-btn:hover .icon-share,
+.share-tooltip.active .icon-share {
   color: #fff;
+}
+
+.tooltip-text {
+  padding: 1.2rem 3.2rem;
+  background-color: var(--very-dark-grayish-blue);
+  border-radius: 9px;
+  transition: all 0.3s;
+
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -150%;
+  left: -165%;
+
+  /* hide element initially */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.tooltip-text::after {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--very-dark-grayish-blue);
+  transform: rotate(-45deg);
+
+  position: absolute;
+  bottom: -8px;
+}
+
+.icon {
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  color: var(--grayish-blue);
+}
+
+.text-share {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2.5px;
+  color: var(--grayish-blue);
+}
+
+/* Active state */
+
+.share-tooltip.active .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 /****************/
