@@ -8,6 +8,8 @@ function toggleShareActiveState() {
   }
 }
 
-document.querySelector(".share-btn").addEventListener("click", () => {
-  toggleShareActiveState();
+document.querySelectorAll(".share-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    toggleShareActiveState();
+  });
 });

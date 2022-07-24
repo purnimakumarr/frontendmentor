@@ -32,7 +32,7 @@ body {
 /****************/
 
 main {
-  padding: 0 2.4rem;
+  padding: 0 4.8rem;
 }
 
 .preview-card {
@@ -153,8 +153,8 @@ main {
 
 .tooltip-text::after {
   content: "";
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
   background-color: var(--very-dark-grayish-blue);
   transform: rotate(-45deg);
 
@@ -187,6 +187,10 @@ main {
   pointer-events: all;
 }
 
+.share-tooltip #share-btn--mobile {
+  display: none;
+}
+
 /****************/
 /* FOOTER */
 /****************/
@@ -198,4 +202,144 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/****************/
+/* MEDIA QUERIES */
+/****************/
+
+@media (max-width: 57em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .tooltip-text {
+    left: -150%;
+  }
+}
+
+@media (max-width: 46em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    row-gap: 2.4rem;
+  }
+
+  .tooltip-text {
+    left: -140%;
+  }
+}
+
+@media (max-width: 27em) {
+  main {
+    padding: 0 2.4rem;
+  }
+
+  .preview-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 51% 49%;
+  }
+
+  .card-img {
+    border-radius: 9px 9px 0 0;
+  }
+
+  .card-text {
+    padding: 4.2rem 4rem 2.4rem 4rem;
+    border-radius: 0 0 9px 9px;
+  }
+
+  .heading {
+    font-size: 2.1rem;
+  }
+
+  .text {
+    font-size: 1.72rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .share-btn {
+    padding: 1.4rem;
+  }
+
+  /* mobile active state */
+  .preview-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .share-tooltip {
+    position: initial;
+  }
+
+  .share-tooltip .tooltip-text {
+    top: initial;
+    bottom: -100%;
+    right: 0;
+    left: 0;
+  }
+
+  .share-tooltip.active #share-btn--mobile {
+    display: flex;
+    background-color: var(--desaturated-dark-blue);
+    padding: 1.2rem;
+  }
+
+  .share-tooltip.active .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+
+    top: initial;
+    bottom: 0;
+    height: 8rem;
+    border-radius: 0 0 9px 9px;
+    gap: 2rem;
+  }
+
+  .tooltip-text::after {
+    display: none;
+  }
+
+  .share-tooltip.active #share-btn--desktop {
+    display: none;
+  }
+
+  #share-btn--mobile {
+    margin-left: auto;
+  }
+
+  .text-share {
+    font-size: 1.8rem;
+  }
+
+  .icon {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 24em) {
+  .preview-card {
+    grid-template-rows: 45% 55%;
+  }
+
+  .card-text {
+    padding: 4.2rem 4rem 1rem 4rem;
+  }
+
+  .share-tooltip.active #share-btn--mobile {
+    padding: 1.2rem;
+  }
+
+  .icon {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 20em) {
+  .preview-card {
+    grid-template-rows: 40% 60%;
+  }
 }
