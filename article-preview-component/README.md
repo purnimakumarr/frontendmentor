@@ -25,15 +25,15 @@ Users should be able to:
 
 #### Desktop
 
-![Desktop view of the site](./images/screenshot-desktop.jpg)
+![Desktop view of the site](./images/screenshot-desktop.png)
 
-![Desktop view with active state of the site](./images/screenshot-desktop-active.jpg)
+![Desktop view with active state of the site](./images/screenshot-desktop-active.png)
 
 #### Mobile
 
-![Mobile view of the site](./images/screenshot-mobile.png)
+![Mobile view of the site](./images/screenshot-mobile.jpg)
 
-![Mobile view with active state of the site](./images/screenshot-mobile-active.png)
+![Mobile view with active state of the site](./images/screenshot-mobile-active.jpg)
 
 ### Links
 
