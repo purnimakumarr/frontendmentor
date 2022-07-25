@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="intro-text">
+        <h1 class="heading">Learn to code by watching others</h1>
+        <p class="text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="form-section">
+        <span class="free-text"
+          ><span class="text-highlight">Try it free 7 days</span> then $20/mo.
+          thereafter</span
+        >
+        <form>
+          <div class="field-wrapper">
+            <input class="field field-first-name" id="first-name" type="text" />
+            <label for="first-name">First Name</label>
+          </div>
+          <div class="field-wrapper">
+            <input class="field field-last-name" id="last-name" type="text" />
+            <label for="last-name">Last Name</label>
+          </div>
+          <div class="field-wrapper">
+            <input class="field field-email" id="email" type="email" />
+            <label for="email">Email Address</label>
+          </div>
+          <div class="field-wrapper">
+            <input class="field field-password" id="password" type="password" />
+            <label for="password">Password</label>
+          </div>
+          <input
+            class="submit-btn"
+            type="submit"
+            value="claim your free trial"
+          />
+          <span class="terms-services-text"
+            >By clicking the button, you are agreeing to our
+            <span class="text-highlight">Terms and Services</span></span
+          >
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

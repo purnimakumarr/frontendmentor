@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* Primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* Accent */
+  --blue: hsl(248, 32%, 49%);
+
+  /* Neutral */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--red);
+  background-image: url(images/bg-intro-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  /* align-items: center; */
+  /* justify-items: center; */
+
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.intro-text {
+  align-self: center;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
+  padding: 0 6.8rem 0 0;
+}
+
+.text {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.free-text {
+  width: 100%;
+  padding: 1.2rem;
+  color: var(--grayish-blue);
+  background-color: var(--blue);
+  border-radius: 6px;
+  margin-bottom: 1.8rem;
+
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.free-text .text-highlight {
+  font-weight: 500;
+  color: #fff;
+}
+
+form {
+  padding: 3.2rem;
+  background-color: #fff;
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.field-wrapper {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: hsla(249, 10%, 26%, 0.8);
+  transition: all 0.3s;
+}
+
+.field {
+  padding: 1.6rem 3rem;
+  width: 100%;
+  border-radius: 6px;
+  border: 1.2px solid #aaa;
+  color: var(--dark-blue);
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.field:focus {
+  outline: 1px solid var(--dark-blue);
+}
+
+.field:focus + label,
+.field.active + label {
+  top: 20%;
+  left: 2%;
+}
+
+#first-name,
+#last-name {
+  text-transform: capitalize;
+}
+
+.submit-btn {
+  background-color: var(--green);
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms-services-text {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grayish-blue);
+}
+
+.terms-services-text .text-highlight {
+  color: var(--red);
+  font-weight: 600;
+}
