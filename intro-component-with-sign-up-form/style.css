@@ -19,6 +19,10 @@ html {
   /* Neutral */
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
+
+  --shadow: rgba(17, 17, 26, 0.1) 0px 6px 0px;
+  --shadow-submit-btn: hsla(154, 59%, 40%, 0.8) 0px 4px 0px;
+  --br-small: 6px;
 }
 
 body {
@@ -37,8 +41,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.2rem;
-  /* align-items: center; */
-  /* justify-items: center; */
 
   max-width: 120rem;
   margin: 0 auto;
@@ -69,12 +71,13 @@ main {
   padding: 1.2rem;
   color: var(--grayish-blue);
   background-color: var(--blue);
-  border-radius: 6px;
+  border-radius: var(--br-small);
   margin-bottom: 1.8rem;
 
   display: inline-block;
   text-align: center;
   font-size: 1.4rem;
+  box-shadow: var(--shadow);
 }
 
 .free-text .text-highlight {
@@ -85,7 +88,8 @@ main {
 form {
   padding: 3.2rem;
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: var(--br-small);
+  box-shadow: var(--shadow);
 
   display: flex;
   flex-direction: column;
@@ -100,7 +104,7 @@ label {
   position: absolute;
   top: 50%;
   left: 6%;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
   font-size: 1.2rem;
   font-weight: 600;
   color: hsla(249, 10%, 26%, 0.8);
@@ -116,6 +120,7 @@ label {
   font-size: 1.4rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 0.8rem;
 }
 
 .field:focus {
@@ -140,14 +145,25 @@ label {
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.8px;
-  border-radius: 6px;
+  border-radius: var(--br-small);
   border: none;
   cursor: pointer;
   padding: 1.6rem;
+  box-shadow: var(--shadow-submit-btn);
+  transition: all 0.3s;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.submit-btn:hover {
+  background-color: hsla(154, 59%, 65%);
+}
+
+.submit-btn:focus {
+  outline: none !important;
+  box-shadow: rgba(42, 162, 110, 0.5) 0px 0px 0px 4px;
 }
 
 .terms-services-text {
@@ -161,4 +177,101 @@ label {
 .terms-services-text .text-highlight {
   color: var(--red);
   font-weight: 600;
+}
+
+/******************/
+/* ERROR STATE (INITIAL) */
+/******************/
+
+.error-icon,
+.error-text {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.error-icon {
+  position: absolute;
+  top: 22%;
+  right: 5%;
+}
+
+.error-text {
+  color: var(--red);
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+  text-align: right;
+
+  position: absolute;
+  top: 60%;
+  right: 0;
+}
+
+/******************/
+/* ERROR STATE (ACTIVE) */
+/******************/
+
+.error-text.active,
+.error-icon.active {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.error-text.active {
+  top: initial;
+  bottom: -8%;
+}
+
+.field.error {
+  border: 2px solid var(--red);
+  margin-bottom: 1.8rem;
+  outline: none;
+}
+
+.field.error + label {
+  top: 45%;
+}
+
+.field.error:focus + label,
+.field.error.active + label {
+  top: 20%;
+}
+
+.field.error#email {
+  color: var(--red);
+}
+
+/******************/
+/* MEDIA QUERIES */
+/******************/
+
+/* 912PX OR LESS */
+@media (max-width: 57em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+
+  .heading {
+    padding-right: 0;
+    font-size: 3.2rem;
+  }
+}
+
+/* 464PX OR LESS */
+@media (max-width: 29em) {
+  html {
+    font-size: 50%;
+  }
 }
