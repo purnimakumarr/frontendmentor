@@ -29,7 +29,17 @@ Users should be able to:
 
 #### Desktop
 
+![Desktop view of the site](./images/screenshot-desktop.png)
+
+![Desktop view of the site having floating labels in the form](./images/screenshot-desktop-active.png)
+
+![Desktop view with error state of the site](./images/screenshot-desktop-error.png)
+
 #### Mobile
+
+![Mobile view of the site](./images/screenshot-mobile.png)
+
+![Mobile view with error state of the site](./images/screenshot-mobile-error.png)
 
 ### Links
 
