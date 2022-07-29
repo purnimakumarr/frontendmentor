@@ -274,4 +274,8 @@ label {
   html {
     font-size: 50%;
   }
+
+  body {
+    background-image: url(images/bg-intro-mobile.png);
+  }
 }
