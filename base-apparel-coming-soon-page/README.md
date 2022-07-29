@@ -54,6 +54,19 @@ Users should be able to:
 
 I learnt about email validation using JavaScript.
 
+```js
+function validateEmail(inputText) {
+  const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (inputText.value.match(mailformat)) {
+    document.querySelector(".email-form").classList.remove("invalid");
+    return true;
+  } else {
+    document.querySelector(".email-form").classList.add("invalid");
+    return false;
+  }
+}
+```
+
 ## Author
 
 - Website - [Purnima Kumar](https://purnimakumarr.github.io/)

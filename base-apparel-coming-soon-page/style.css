@@ -28,9 +28,13 @@ body {
 }
 
 *:focus {
-  box-shadow: 0 0 0 3px hsla(0, 93%, 68%, 0.4) !important;
+  box-shadow: 0 0 0 4px #000 !important;
   outline: none !important;
-  border: none !important;
+}
+
+.email-form input:focus {
+  box-shadow: none !important;
+  border: 2px solid rgba(249, 98, 98, 0.4) !important;
 }
 
 /*****************/
@@ -110,7 +114,7 @@ body {
 }
 
 .submit-btn {
-  padding: 1.5rem 3.6rem;
+  padding: 1.4rem 3.6rem;
   border-radius: 2.4rem;
   border: none;
   cursor: pointer;
@@ -124,16 +128,12 @@ body {
 
   position: absolute;
   top: 0;
-  right: 0;
+  right: -1%;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .submit-btn:hover {
-  background: linear-gradient(
-    135deg,
-    hsla(0, 80%, 86%, 0.6),
-    hsla(0, 74%, 74%, 0.6)
-  );
+  background: linear-gradient(135deg, hsla(0, 80%, 90%), hsla(0, 85%, 90%));
 }
 
 .icon-arrow {
