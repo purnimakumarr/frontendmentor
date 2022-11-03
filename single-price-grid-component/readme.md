@@ -24,12 +24,14 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![Single price grid component in desktop view](images/screenshot-desktop.png)
+
+![Single price grid component in mobile view](images/screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [View code](https://github.com/purnimakumarr/frontendmentor/tree/main/single-price-grid-component)
+- Live Site URL: [View site](https://purnimakumarr.github.io/frontendmentor/single-price-grid-component)
 
 ## My process
 
